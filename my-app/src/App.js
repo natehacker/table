@@ -15,18 +15,12 @@ function App(){
     keys.some((key)=>item[key].toLowerCase().includes(query)) 
     )
   }
-
   return(
     <div className="app">
       <input type="text" placeholder="search" className="search"
       onChange={(e)=> setQuery(e.target.value)}/> 
       
        <Table data={search(Users)}/>
-
-
-
-   
-   
     </div>
   )
 }
