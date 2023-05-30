@@ -3,6 +3,11 @@ import { Users } from "./users"
 import { useState } from "react";
 import { Table } from "./Table";
 
+
+
+
+
+
 function App(){
   const[query, setQuery] = useState("")
 
@@ -19,8 +24,14 @@ function App(){
     <div className="app">
       <input type="text" placeholder="search" className="search"
       onChange={(e)=> setQuery(e.target.value)}/> 
+<button className="pdf"><a href="" download>
+ <img src="image.png"  alt="export pdf" width="80px" height="20px"/>
+</a></button>
+            
+       
       
        <Table data={search(Users)}/>
+      
     </div>
   )
 }
