@@ -8,6 +8,7 @@ import { Table } from "./Table";
 
 
 
+
 function App(){
   const[query, setQuery] = useState("")
 
@@ -24,13 +25,15 @@ function App(){
     <div className="app">
       <input type="text" placeholder="search" className="search"
       onChange={(e)=> setQuery(e.target.value)}/> 
-<button className="pdf"><a href="" download>
- <img src="image.png"  alt="export pdf" width="80px" height="20px"/>
+
+<button className="pd2"> <a href="" download>
+<button  className="pdf" alt="exportpdf" >Export Pdf</button>
 </a></button>
             
        
       
        <Table data={search(Users)}/>
+
       
     </div>
   )
