@@ -5,8 +5,8 @@ export const Table = ({data}) => {
     <table id="customers">
        <tbody>
         <tr>
-            <th>Name</th>
-            <th>surname</th>
+            <th>State</th>
+            <th>State Epi</th>
             <th>Email</th>
         </tr>
         {data.map((item)=>(
